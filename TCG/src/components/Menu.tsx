@@ -24,7 +24,7 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'Play',
-    url: '/Play',
+    url: '/Game',
     iosIcon: skullOutline,
     mdIcon: skullOutline
   },
