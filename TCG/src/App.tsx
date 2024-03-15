@@ -24,6 +24,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Collection from './pages/Collection';
 
 setupIonicReact();
 
@@ -36,6 +37,7 @@ const App: React.FC = () => {
           <IonRouterOutlet id="main">
             <Route exact path="/" component={Login} />
             <Route exact path="/app" component={Home} />
+            <Route exact path="/Collection" component={Collection} />
             <Route path="/folder/:name" exact={true}>
               <Page />
             </Route>

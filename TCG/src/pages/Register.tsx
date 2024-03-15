@@ -1,9 +1,7 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import CardContainer from "../components/CardContainer";
-import Card from '../interfaces/Card_Interface';
 
+const RegisterPage: React.FC = () => {
 
-const Collection: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -11,15 +9,19 @@ const Collection: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Collections</IonTitle>
+          <IonTitle>Register</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
-        <CardContainer id='1' name='testCard' img='temp img' type='artiface' subType='' manaCost='3' rarity='rare' text='some text' power='0' toughness='2' />
+        <IonHeader collapse="condense">
+          <IonToolbar>
+            <IonTitle size="large">Register</IonTitle>
+          </IonToolbar>
+        </IonHeader>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Collection;
+export default RegisterPage;
