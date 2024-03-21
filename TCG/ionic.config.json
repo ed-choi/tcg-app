@@ -1,7 +1,0 @@
-{
-  "name": "TCG",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
